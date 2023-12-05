@@ -18,17 +18,13 @@ int main(void)
 // TODO: Complete the function
 float half(float bill, float tax, int tip)
 {
+    // convert percentage to apropriate formats
     float taxPercent = tax / 100;
     float tipConvertedtoFloat = tip;
-    float tipPercent = tip / 100;
-    printf("bill * taxPercent: %f", bill * taxPercent);
-    printf("\n");
-    printf("tipTrans: %f", tipConvertedtoFloat);
-    printf("\nbill * tipPercent: %f", bill * tipPercent);
-    printf("\n");
+    float tipPercent = tipConvertedtoFloat / 100;
+    
+    // add tax, calculate tip then split the bill evenly 
     float billInclusiveTax = bill + (bill * taxPercent);
-    printf("bill inclusive tax = %f", billInclusiveTax);
-    printf("\n");
     float myHalf = (billInclusiveTax + (billInclusiveTax * tipPercent)) / 2;
     return myHalf;
 }
