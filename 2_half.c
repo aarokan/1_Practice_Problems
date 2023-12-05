@@ -19,10 +19,12 @@ int main(void)
 float half(float bill, float tax, int tip)
 {
     float taxPercent = tax / 100;
-    int tipPercent = tip / 100;
+    float tipConvertedtoFloat = tip;
+    float tipPercent = tip / 100;
     printf("bill * taxPercent: %f", bill * taxPercent);
     printf("\n");
-    printf("bill * tipPercent: %f", bill * tipPercent);
+    printf("tipTrans: %f", tipConvertedtoFloat);
+    printf("\nbill * tipPercent: %f", bill * tipPercent);
     printf("\n");
     float billInclusiveTax = bill + (bill * taxPercent);
     printf("bill inclusive tax = %f", billInclusiveTax);
