@@ -31,5 +31,9 @@ int main(void)
 bool prime(int number)
 {
     // TODO
+    for (int divider = 2; divider < number; divider++)
+    {
+        
+    }
     return false;
 }
