@@ -31,9 +31,16 @@ int main(void)
 bool prime(int number)
 {
     // TODO
+    int remainders = 0;
     for (int divider = 2; divider < number; divider++)
     {
         
+    }
+
+    // check if number is prime (having remainders means it is divisible)
+    if (remainders > 0) 
+    {
+        return true;
     }
     return false;
 }
