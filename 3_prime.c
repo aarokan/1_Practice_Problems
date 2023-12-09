@@ -43,6 +43,11 @@ bool prime(int number)
         }
     }
 
+    // execlude 1 from prime numbers
+    if (number == 1)
+    {
+        return false;
+    }
     // Not divisible so it is a prime number
     return true;
 }
