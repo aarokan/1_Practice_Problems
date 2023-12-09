@@ -34,13 +34,15 @@ bool prime(int number)
     int remainders = 0;
     for (int divider = 2; divider < number; divider++)
     {
-        
+        remainders += number % divider;
+
+        // check if there is no remainder (means it is divisible & not prime)
+        if (remainders == 0)
+        {
+            return false;
+        }
     }
 
-    // check if number is prime (having remainders means it is divisible)
-    if (remainders > 0) 
-    {
-        return true;
-    }
-    return false;
+    // Not divisible so it is a prime number
+    return true;
 }
