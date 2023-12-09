@@ -31,9 +31,9 @@ int main(void)
 bool prime(int number)
 {
     // TODO
-    int remainders = 0;
     for (int divider = 2; divider < number; divider++)
     {
+        int remainders = 0;
         remainders += number % divider;
 
         // check if there is no remainder (means it is divisible & not prime)
