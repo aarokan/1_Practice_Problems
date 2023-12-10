@@ -37,7 +37,7 @@ bool prime(int number)
         remainders += number % divider;
 
         // check if there is no remainder (means it is divisible & not prime)
-        if (remainders == 0)
+        if (remainders == 0 || number % 2 == 0)
         {
             return false;
         }
